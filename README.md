@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Users
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple React app for testing purposes. App allows holding `users` state and adding new users through `UserForm`.
+
+The project relates to [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/) Udemy course by [Stephen Grider](https://www.udemy.com/user/sgslo/).
+
+Project uses `npm` as a package manager, to start the app run `npm run start`.
 
 ## Available Scripts
 
