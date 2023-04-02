@@ -1,9 +1,16 @@
+import { useState } from 'react';
 import UserForm from './UserForm';
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  const onUserAdd = (user) => {
+    setUsers([...users, user]);
+  };
+
   return (
     <div>
-      <UserForm />
+      <UserForm onUserAdd={onUserAdd} />
     </div>
   );
 }
