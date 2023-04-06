@@ -1,4 +1,4 @@
-const UserList = ({ users }) => {
+export const UsersList = ({ users }) => {
   const renderedUsers = users.map((user, i) => (
     <tr key={i}>
       <td>{user.name}</td>
@@ -19,4 +19,3 @@ const UserList = ({ users }) => {
   );
 };
 
-export default UserList;

@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import UserForm from './UserForm';
-import UserList from './UserList';
+import { UserForm, UsersList } from './components';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -13,7 +12,7 @@ function App() {
     <div>
       <UserForm onUserAdd={onUserAdd} />
       <hr />
-      <UserList users={users} />
+      <UsersList users={users} />
     </div>
   );
 }

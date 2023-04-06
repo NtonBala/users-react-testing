@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const UserForm = ({ onUserAdd }) => {
+export const UserForm = ({ onUserAdd }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
@@ -24,4 +24,3 @@ const UserForm = ({ onUserAdd }) => {
   );
 };
 
-export default UserForm;
