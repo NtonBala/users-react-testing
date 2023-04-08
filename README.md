@@ -4,7 +4,9 @@ Simple React app for testing purposes. App allows holding `users` state and addi
 
 The project is the first project of [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/) Udemy course by [Stephen Grider](https://www.udemy.com/user/sgslo/).
 
-Project uses `npm` as a package manager, to start the app run `npm run start`.
+Project uses `npm` as a package manager.
+
+Project is deployed to [GitHub Pages](https://ntonbala.github.io/users-react-testing). to deploy the project run `npm run deploy`.
 
 ## Available Scripts
 
