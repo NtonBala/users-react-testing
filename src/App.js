@@ -9,7 +9,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container pt-5">
       <UserForm onUserAdd={onUserAdd} />
       <hr />
       <UsersList users={users} />
