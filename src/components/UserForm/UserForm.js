@@ -11,16 +11,39 @@ export const UserForm = ({ onUserAdd }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <label>Name</label>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+      <div className="mb-3">
+        <label htmlFor="inputName" className="form-label">
+          Name
+        </label>
+        <input
+          id="inputName"
+          className="form-control"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
       </div>
-      <div>
-        <label>Email</label>
-        <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <div className="mb-3">
+        <label htmlFor="inputEmail" className="form-label">
+          Email
+        </label>
+        <input
+          id="inputEmail"
+          className="form-control"
+          type="text"
+          value={email}
+          aria-describedby="emailHelp"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <div id="emailHelp" className="form-text">
+          We'll never share your email with anyone else.
+        </div>
       </div>
-      <button>Add User</button>
+      <div className="d-grid">
+        <button type="submit" className="btn btn-outline-primary">
+          Add User
+        </button>
+      </div>
     </form>
   );
 };
-

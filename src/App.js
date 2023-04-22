@@ -10,9 +10,13 @@ function App() {
 
   return (
     <div className="container pt-5">
-      <UserForm onUserAdd={onUserAdd} />
+      <div>
+        <UserForm onUserAdd={onUserAdd} />
+      </div>
       <hr />
-      <UsersList users={users} />
+      <div>
+        <UsersList users={users} />
+      </div>
     </div>
   );
 }
