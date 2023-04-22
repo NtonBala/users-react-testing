@@ -1,8 +1,8 @@
 # Users
 
-Simple React app for testing purposes. App allows holding `users` state and adding new users through `UserForm`.
+Simple React app for testing purposes. App holds `users` state in memory (app store) and allows adding new users to `UsersList` component (Users table) via `UserForm`.
 
-The project is the first project of [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/) Udemy course by [Stephen Grider](https://www.udemy.com/user/sgslo/).
+This project is the first project of [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/) Udemy course by [Stephen Grider](https://www.udemy.com/user/sgslo/).
 
 Project uses `npm` as a package manager.
 
