@@ -9,15 +9,23 @@ function App() {
   };
 
   return (
-    <div className="container pt-5">
-      <div>
-        <UserForm onUserAdd={onUserAdd} />
+    <>
+      <nav className="navbar navbar-light bg-light">
+        <div className="container-fluid">
+          <span className="navbar-brand h1 mb-0">Users</span>
+        </div>
+      </nav>
+
+      <div className="container pt-5">
+        <div>
+          <UserForm onUserAdd={onUserAdd} />
+        </div>
+        <hr />
+        <div>
+          <UsersList users={users} />
+        </div>
       </div>
-      <hr />
-      <div>
-        <UsersList users={users} />
-      </div>
-    </div>
+    </>
   );
 }
 
