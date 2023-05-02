@@ -15,6 +15,7 @@ export const UserForm = ({ onUserAdd }) => {
         <label htmlFor="inputName" className="form-label">
           Name
         </label>
+
         <input
           id="inputName"
           className="form-control"
@@ -23,10 +24,12 @@ export const UserForm = ({ onUserAdd }) => {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
+
       <div className="mb-3">
         <label htmlFor="inputEmail" className="form-label">
           Email
         </label>
+
         <input
           id="inputEmail"
           className="form-control"
@@ -35,10 +38,12 @@ export const UserForm = ({ onUserAdd }) => {
           aria-describedby="emailHelp"
           onChange={(e) => setEmail(e.target.value)}
         />
+
         <div id="emailHelp" className="form-text">
           We'll never share your email with anyone else.
         </div>
       </div>
+
       <div className="d-grid">
         <button type="submit" className="btn btn-outline-primary">
           Add User
