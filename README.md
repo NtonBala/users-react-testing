@@ -1,6 +1,6 @@
 # Users
 
-Simple React app for testing purposes. App holds `users` state in memory (app store) and allows adding new users to `UsersList` component (Users table) via `UserForm`.
+Simple React app for testing purposes, styled with [Bootstrap 5](https://getbootstrap.com/). App holds `users` state in memory (app store) and allows adding new users to `UsersList` component (Users table) via `UserForm`.
 
 This project is the first project of [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/) Udemy course by [Stephen Grider](https://www.udemy.com/user/sgslo/).
 
