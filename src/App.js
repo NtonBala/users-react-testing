@@ -20,8 +20,8 @@ function App() {
         <div>
           <UserForm onUserAdd={onUserAdd} />
         </div>
-        <hr />
-        <div>
+
+        <div className="pt-5">
           <UsersList users={users} />
         </div>
       </div>

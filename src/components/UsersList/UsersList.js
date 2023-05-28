@@ -7,15 +7,19 @@ export const UsersList = ({ users }) => {
   ));
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>{renderedUsers}</tbody>
-    </table>
+    <div className="table-responsive">
+      <table className="table table-light table-striped">
+        <caption>List of Users</caption>
+
+        <thead className="table-dark">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+
+        <tbody>{renderedUsers}</tbody>
+      </table>
+    </div>
   );
 };
-

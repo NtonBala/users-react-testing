@@ -45,7 +45,7 @@ export const UserForm = ({ onUserAdd }) => {
       </div>
 
       <div className="d-grid">
-        <button type="submit" className="btn btn-outline-primary">
+        <button type="submit" className="btn btn-primary">
           Add User
         </button>
       </div>
