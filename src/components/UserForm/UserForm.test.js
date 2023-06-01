@@ -13,14 +13,13 @@ test('it shows two inputs and a button', () => {
 });
 
 test('it calls onUserAdd when the form is submitted', async () => {
-  // * Test has pseudo code
-
   const mock = jest.fn();
 
-  // 1. Try to render form component
+  // * Pseudo Code
+  // * 1. Try to render form component
   render(<UserForm onUserAdd={mock} />);
 
-  // 2. Find elements and manipulate them
+  // * 2. Find elements and manipulate them
   const nameInput = screen.getByRole('textbox', { name: /name/i });
   const emailInput = screen.getByRole('textbox', { name: /email/i });
 
@@ -34,7 +33,7 @@ test('it calls onUserAdd when the form is submitted', async () => {
 
   await user.click(button);
 
-  // 3. Make sure onUserAdd is called with name and email
+  // * 3. Make sure onUserAdd is called with name and email
   expect(mock).toHaveBeenCalled();
   expect(mock).toHaveBeenCalledWith({ name: 'Jane', email: 'jane@jane.com' });
 });
