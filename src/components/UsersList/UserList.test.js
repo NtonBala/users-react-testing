@@ -4,7 +4,14 @@ import { UserList } from './UsersList';
 test('render one row per user', () => {
   // TODO:
   // 1. Render the UserList component
-  // 2. Manipulate it to find all the rows in the table
+  const users = [
+    { name: 'Jane', email: 'jane@jane.com' },
+    { name: 'Sam', email: 'sam@sam.com' },
+  ];
+
+  render(<UserList users={users} />);
+
+  // 2. Find all the rows in the table
   // 3. Assert we have correct number of rows in the table
 });
 
