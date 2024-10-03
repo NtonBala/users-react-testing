@@ -19,6 +19,20 @@ test('render one row per user', () => {
 
 test('render the email and name of each user', () => {
   // 1. Render the UsersList component
-  // 2. Manipulate it to get the array of all the rows in the table
-  // 3. Assert that users array mapped from rows corresponds users prop
+  const users = [
+    { name: 'Jane', email: 'jane@jane.com' },
+    { name: 'Sam', email: 'sam@sam.com' },
+  ];
+
+  render(<UsersList users={users} />);
+
+  for (const user of users) {
+    // 2. Manipulate it to find the name and email of each user
+    const name = screen.getByRole('cell', { name: user.name });
+    const email = screen.getByRole('cell', { name: user.email });
+
+    // 3. Assert that name and email of each user are visible on the screen
+    expect(name).toBeInTheDocument();
+    expect(email).toBeInTheDocument();
+  }
 });
