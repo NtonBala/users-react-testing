@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { UsersList } from './UsersList';
 
 test('render one row per user', () => {
@@ -8,11 +8,10 @@ test('render one row per user', () => {
     { name: 'Sam', email: 'sam@sam.com' },
   ];
 
-  const { container } = render(<UsersList users={users} />);
+  render(<UsersList users={users} />);
 
   // 2. Find all the rows in the table
-  // eslint-disable-next-line
-  const rows = container.querySelectorAll('tbody tr');
+  const rows = within(screen.getByTestId('users')).getAllByRole('row');
 
   // 3. Assert we have correct number of rows in the table
   expect(rows).toHaveLength(2);
