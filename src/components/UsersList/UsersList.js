@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const UsersList = ({ users }) => {
   const renderedUsers = users.map((user, i) => (
     <tr key={i}>
@@ -18,7 +20,7 @@ export const UsersList = ({ users }) => {
           </tr>
         </thead>
 
-        <tbody>{renderedUsers}</tbody>
+        <tbody data-testid="users">{renderedUsers}</tbody>
       </table>
     </div>
   );
