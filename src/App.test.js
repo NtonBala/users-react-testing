@@ -19,7 +19,10 @@ test('can receive a new user and show it on a list', async () => {
 
   await user.click(button);
 
-  screen.debug();
-
   // 3. Make sure we can find the new name & email in the table.
+  const name = screen.getByRole('cell', { name: 'jane' });
+  const email = screen.getByRole('cell', { name: 'jane@jane.com' });
+
+  expect(name).toBeInTheDocument();
+  expect(email).toBeInTheDocument();
 });
