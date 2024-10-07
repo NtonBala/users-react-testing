@@ -37,3 +37,9 @@ test('it calls onUserAdd when the form is submitted', async () => {
   expect(mock).toHaveBeenCalled();
   expect(mock).toHaveBeenCalledWith({ name: 'Jane', email: 'jane@jane.com' });
 });
+
+test('it empties the two inputs when the form is submitted', () => {
+  // 1. Render UserForm component.
+  // 2. Find name & email, click on them and type in them. Click on the button.
+  // 3. Make sure name & email inputs are empty.
+});
