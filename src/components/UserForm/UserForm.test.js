@@ -54,7 +54,7 @@ test('it empties the two inputs when the form is submitted', async () => {
 
   await user.click(button);
 
-  // 3. Make sure name & email inputs has no value.
+  // 3. Make sure name & email inputs have no value.
   expect(nameInput).toHaveValue('');
   expect(emailInput).toHaveValue('');
 });

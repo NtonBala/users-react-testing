@@ -6,7 +6,11 @@ export const UserForm = ({ onUserAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     onUserAdd({ name, email });
+
+    setName('');
+    setEmail('');
   };
 
   return (
@@ -16,13 +20,7 @@ export const UserForm = ({ onUserAdd }) => {
           Name
         </label>
 
-        <input
-          id="inputName"
-          className="form-control"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+        <input id="inputName" className="form-control" type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </div>
 
       <div className="mb-3">
