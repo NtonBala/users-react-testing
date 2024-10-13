@@ -45,6 +45,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+### RTL Book
+
+A command line tool that provides an interactive cheat shit environment for writing small components, testing them and adding some notes. In order to launch run `npx rtl-book serve ./rtl-notebook/${filename}.js` from project folder (this either creates and runs or just runs an existing file). And go to `http://localhost:4005`. All changes to RTL book are automatically saved.
+
+Notes are using `markdown syntax`. With less bugs took works in Safari browser.
+Code sells are smashed together and then progressively executed. This means that variables from the cell above are available in the cells below, but not vice versa. `render` function is used to render the component in both _code_ and _test_ cells.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
